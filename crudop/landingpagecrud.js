@@ -32,7 +32,7 @@ const Health=require("../schema/health.schema")
 
 //Landing page
 
-router.get("/",  (req, res) => {
+router.get("",  (req, res) => {
     
     res.render("landingpage")
 
