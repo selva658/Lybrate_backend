@@ -12,7 +12,9 @@ app.use(express.json())
 
 app.set("view engine", "ejs")
 
-app.use(express.static("public"))
+var distDir = __dirname + "/public";
+
+app.use(express.static(distDir));
 
 app.use("/homepage", landingpagecrud)
 
