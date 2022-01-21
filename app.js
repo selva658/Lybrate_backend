@@ -2,8 +2,14 @@ const app = require("./se")
 
 const connect = require("./configs/db")
 
-app.listen(5000, async () => {
+let port = process.env.PORT;
+if (port == null || port == "") {
+    port=5000
+}
+
+
+app.listen(port, async () => {
     await connect()
-    console.log("listening on server 5000");
+    console.log("listening on server ");
 
 })
