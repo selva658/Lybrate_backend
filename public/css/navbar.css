@@ -1,0 +1,277 @@
+#mdiv {
+    border: 1px solid transparent;
+    height: 50px;
+    margin-left: 140px;
+    width: 100%;
+}
+.indiv1 {
+    display: inline-block;
+    border: 1px solid transparent;
+    vertical-align: top;
+}
+.indiv2 {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    margin-left: 100px;
+}
+#indiv3 {
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.srch {
+    position: absolute;
+    top: 25px;
+    right: 585px;
+}
+#indiv4 {
+    border: 1px solid transparent;
+    display: inline-block;
+    vertical-align: top;
+    /* padding-top: 11px; */
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#indiv5 {
+    border: 1px solid red;
+    border-radius: 5px;
+    height: 20px;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    /* padding-top: 16px; */
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+#signin {
+    border: 1px solid transparent;
+    color: #6c6a6a;
+    width: 250px;
+    height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 450px;
+    background-color: white;
+}
+#signin>div {
+    padding: 10px;
+}
+#hello:hover #signin {
+    display: block;
+}
+#hello {
+    display: inline-block;
+    border: 1px solid transparent;
+    height: 30px;
+    margin-top: 13px;
+    vertical-align: top;
+    /* padding-top: 10px; */
+}
+
+#indiv6 {
+    display: inline-block;
+    border: 1px solid transparent;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#tdiv {
+    border: 1px solid transparent;
+    height: 40px;
+    background-color: rgb(34, 34, 34);
+}
+#tdiv2 {
+    border: 1px soild transparent;
+    font-family:
+        Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-left: 65px;
+    margin-top: 11px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: start;
+}
+#tdiv2:hover #tdiv3 {
+    display: block;
+}
+#tdiv3 {
+    border: 1px solid transparent;
+    width: 250px;
+    /* height: 350px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+    position: absolute;
+    color: black;
+    /* top: 50px; */
+    /* right: 450px; */
+    background-color: white;
+    padding-left: 20px;
+}
+.se{
+    padding: 10px;
+    border-radius: 5px;
+}
+.se a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+#scartnav{
+    width: 80%;
+    margin: auto;
+}
+ #scartulnav li{
+     list-style: none;
+ }
+#scartulnav{
+     display: flex;
+     gap: 5px;
+ }
+ .slogo{
+     height: 40px;
+ }
+ .scartinputnav{
+     height: 30px;
+     width: 300%;
+ }
+ /* .li2{
+     margin-left: 5%;
+ }
+ .li3{
+     margin-left: 30%;
+     margin-top: 7px;
+ }
+ .li4{
+     margin-left: 2%;
+ }
+ .li5,.li6{
+     margin-left: 2%;
+     margin-top: 5px;
+ }
+ .li6{
+     font-size: 40px;
+     margin-top: -10px;
+     color: #c92811;
+ }
+ .scartnavicon{
+        margin-top: 5px;
+ }
+ .sspan{
+     margin-top: 5px;
+ }
+
+ #scartselect{
+     border: none;
+     font-size: 16px;
+ }
+ .li6 a{
+     color: brown;
+ }
+ .li5 a{
+     text-decoration: none;
+     color: black;
+ } */
+ /* .li7{
+     border: 1px solid red;
+     margin-left: 100%;
+     width: 80%;
+     height: 30px;
+     border-radius: 50px;
+ } */
+ .loginname{
+     margin-left: 120%;
+     margin-top: -25px;
+     font-size: 18px;
+     font-weight: bolder;
+ }
+ #user{
+     font-size: 30px;
+     margin-left: 50%;
+ }
+ #user:hover{
+     color: teal;
+ }
+
+ body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+#scartnav{
+    width: 80%;
+    margin: auto;
+}
+ #scartulnav li{
+     list-style: none;
+ }
+#scartulnav{
+     display: flex;
+     gap: 5px;
+ }
+ .slogo{
+     height: 40px;
+ }
+ .scartinputnav{
+     height: 30px;
+     width: 300%;
+ }
+ .li2{
+     margin-left: 5%;
+ }
+ .li3{
+     margin-left: 30%;
+     margin-top: 7px;
+ }
+ .li4{
+     margin-left: 2%;
+ }
+ .li5,.li6{
+     margin-left: 2%;
+     margin-top: 5px;
+ }
+ .li5 a{
+     text-decoration: none;
+     color:#c92811;
+     font-size: 17px;
+ }
+
+ .li5 button{
+     border: none;
+     
+ }
+ .li6{
+     font-size: 40px;
+     margin-top: -10px;
+     color: #c92811;
+ }
+ .scartnavicon{
+        margin-top: 5px;
+ }
+ .sspan{
+     margin-top: 5px;
+ }
+
+ #scartselect{
+     border: none;
+     font-size: 16px;
+ }
+ #carticon{
+    font-size: 33px;
+    /* margin-top: -10px; */
+    color: #c92811;
+     
+ }
+ .li6 a{
+     color:#c92811
+ }
+ /*  */

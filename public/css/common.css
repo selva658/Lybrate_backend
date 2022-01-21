@@ -1,0 +1,220 @@
+
+
+    .navbar1{
+        font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+        /* border: 1px solid black; */
+        position: sticky;
+        color: #222;
+        text-decoration: none;
+        box-sizing: border-box;
+        background: #ffffff;
+        z-index: 49;
+        font-size: 14px;
+        width: 100%;
+    }
+    
+
+.navbar-strip{
+    /* border: 1px solid black; */
+    background: #ebeef3;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+.navbar-strip *:last-child {
+    padding-right: 8px;
+}
+.navbar-container{
+    /* border: 1px solid black; */
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 8px;
+    margin: 0 auto;
+    height: 30px;
+    gap: 30px;
+}
+.anchor{
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin-top: 4px;
+    justify-content: space-between;
+    color: #444;
+    gap: 30px;
+}
+.anchor a{
+    color: #444;
+}
+.navbar-container1{
+    /* border: 1px solid black; */
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 8px;
+    margin: 0 auto;
+    height: 70px;
+}
+.justify-end {
+    text-align: right;
+    text-align-last: right;
+    justify-content: flex-end;
+}
+.direction-row {
+    flex-direction: row;
+}
+/* Second Div */
+.navbar-brand img{
+    /* border: 1px solid black; */
+    float: left;
+    /* display: inline-block; */
+}
+.navbar-brand img{
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin-top: 10px;
+    height: 40px;
+    width: 140px;
+}
+.navbar-actions {
+    float: right;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+}
+.navbar-actions .items {
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin-top: 8px;
+    padding: 0 12px;
+    line-height: 36px;
+    height: 36px;
+    font-size: 16px;
+    color: #444;
+    transition: all 0.28s ease;
+    cursor: pointer;
+    font-weight: 500;
+}
+.navbar-actions > * {
+    margin: 13px 8px 0;
+}
+.navbar-actions > a {
+    /* border: 1px solid black; */
+    text-decoration: none;
+    color: #c82506;
+}
+.navbar-actions .items:last-of-type {
+    padding-right: 0;
+}
+.header-goodkart-logo {
+    /* border: 1px solid black; */
+    background: #c82506;
+    border-radius: 20px;
+    display: inline-block;
+    fill: #fff;
+    margin-top: 8px;
+    padding: 3px 12px 0 12px !important;
+    line-height: 36px;
+    height: 36px;
+}
+.nav-cart-icon {
+    /* border: 1px solid black; */
+    margin-top: 5px;
+    margin-right: 15px;
+}
+.nav-cart-icon {
+    position: relative;
+    text-align: center;
+    padding: 0px;
+}
+.nav-cart-icon span.cart-text {
+    position: absolute;
+    left: 7px;
+    width: 23px;
+    font-size: 14px;
+    display: block;
+    top: 3px;
+}
+.lybText--red {
+    color: #c82506 !important;
+}
+.grid--justify-center {
+    text-align: center;
+    text-align-last: center;
+    justify-content: center;
+}
+.ly-svg--red {
+    color: #c82506 !important;
+}
+.ly-svg--xl {
+    height: 32px;
+    width: 32px;
+}
+ly-svg-icon {
+    background-repeat: no-repeat no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor;
+    height: 20px;
+    width: 20px;
+}
+.nav-cart-icon {
+    position: relative;
+    text-align: center;
+    padding: 0px;
+}
+
+.nav-cart-icon > a {
+    text-decoration: none;
+    color: #c82506;
+}
+
+/* Third Div */
+.subnav-container {
+    /* border: 1px solid black; */
+    position: relative;
+    color: #222;
+    width: 100%;
+}
+.navbar-subnav {
+    background: #fff;
+    display: flex;
+    padding: 0 16px;
+    font-size: 14px;
+}
+.navbar-subnav {
+    position: relative;
+    margin: 0;
+    border-top: 1px solid rgba(0,0,0,0.17);
+    white-space: nowrap;
+    justify-content: center;
+    height: 30px;
+    gap: 45px;
+    margin-top: 8px;
+}
+.navbar-subnav .new-subnav-action {
+    padding: 0 60px 0 13px;
+}
+.navbar-subnav .new-subnav-action {
+    /* border: 1px solid black; */
+    padding: 0 16px;
+    flex: 0 0 auto;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    height: 40px;
+    line-height: 40px;
+    float: none;
+    padding: 0 13px;
+    cursor: pointer;
+}
+.navbar-subnav .new-subnav-action .color_white {
+    color: #222;
+}
+.navbar-subnav .new-subnav-action .color_white {
+    color: rgb(10, 10, 10);
+}

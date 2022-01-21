@@ -1,0 +1,231 @@
+body{
+    background-color: #EEEEEE;
+    overflow-x: hidden;
+}
+#sub{
+    width:78%;
+    margin: auto;
+    background-color: #EEEEEE;
+    font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#ex-best{
+ width:100%;
+}
+#ex{
+ width:49%;
+ display: inline-block;
+ background-color: white;
+ margin-right: 1%;
+}
+#best{
+ width:48.5%;
+ display: inline-block;
+ background-color: white;
+ vertical-align: top;
+}
+#ex>div, #best>div,.styleall>div>p, .styleall>div>div>p
+{
+ color: rgb(34, 34, 34);
+ font-size: 18px;
+ font-weight: 400px;
+}
+#ex>div:nth-child(1), #best>div:nth-child(1){
+padding:1%;
+}
+.styleall{
+ display:grid;
+ grid-template-columns: repeat(2,50%);
+}
+.styleall>div:nth-child(1){
+border-right:1px solid #EEEEEE;
+border-top:2px solid #EEEEEE;
+border-bottom:1px solid #EEEEEE
+}
+.styleall>div:nth-child(3){
+border-right:1px solid #EEEEEE;
+border-top:1px solid #EEEEEE;
+}
+.styleall>div:nth-child(2){
+border-left:1px solid #EEEEEE;
+border-top:2px solid #EEEEEE;
+border-bottom:1px solid #EEEEEE;
+}
+.styleall>div:nth-child(4){
+border-left:1px solid #EEEEEE;
+border-top:1px solid #EEEEEE;
+}
+
+.styleall>div>img
+{
+ width:85%;
+ height: 200px;
+ display: inline-block;
+}
+#rating{
+ display: inline-block;
+ vertical-align: top;
+ border: 1px solid #259B24;
+ background-color: #259B24;
+ color: white;
+ border-radius: 15%;
+ padding:0.5% 2% 0.5% 2%;
+}
+.styleall>div>p
+{
+font-size: 14px;
+font-weight: bold;
+text-align: center;
+}
+.styleall>div>div{
+ text-align: center;
+ margin-top: -6%;
+}
+.styleall>div>div>p:nth-child(1){
+ color:#C82506;
+ font-size: 14px;
+ font-weight: bold;
+ display: inline-block;
+ margin-right: 1.5%;
+}
+.styleall>div>div>p:nth-child(2){
+color:#6C6A6A;
+ font-size: 14px;
+ font-weight: bold;
+ text-decoration: line-through;
+ display: inline-block;
+ margin-right: 1.5%;
+}
+.styleall>div>div>p:nth-child(3){
+color:#2C9B47;
+font-size: 14px;
+ font-weight: bold;
+ display: inline-block;
+}
+.main>div{
+ margin-top: 1.5%;
+ margin-bottom: 1.5%;
+}
+.shopNow>img{
+ width:32%;
+ margin-right: 1%;
+ height: 230px;
+}
+#content>div>p,#content>div>ol>li{
+ color:#9a9b9f;
+ font-size: 14px;
+ font-weight: 400px;
+ text-align: justify;
+}
+#content>div>h4, #content>div>h3{
+ color:#6c6a6a;
+}
+#content>div>div>a{
+ color: #c82506;
+ text-decoration: none;
+}
+#slideshow>img{
+    width: 100%;
+    height: 200px;
+}
+/* -----------------------------------------footer---------------------------------------------- */
+#footer{
+    background-color: #676767;
+    font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#footer>div{
+    width:78%;
+    margin: auto;
+    color: #ffffff;
+    font-size: 13px;
+}
+#footer>div>ul{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 3%;
+    line-height: 20px;  
+}
+#footer>div>ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+#footer>div>ul>li:hover{
+    text-decoration: underline;
+}
+#footer>div>ul>li:nth-child(1){
+    margin-bottom: 4%;
+    color:#cccccc;
+}
+#footer>div>ul>li:nth-child(1):hover{
+    text-decoration: none;
+}
+#social>li:nth-child(2):hover,#social>li:nth-child(3):hover{
+    text-decoration: none;
+}
+#social>li:nth-child(3){
+ color:#cccccc;
+}
+#footer>div:nth-child(3){
+    text-align: center;
+    height: 50px;
+}
+/* -----------------------------------------------------------------footer End------------------------------------ */
+@media only screen and (max-width:1200px) {
+    #sub{
+        width: 100%;
+    }
+  #ex{
+      display: block;
+      width:594px;
+  } 
+  #best{
+      display: block;
+      margin-top: 1.5%;
+     width:594px;
+  } 
+  .shopNow{
+      display: grid;
+      grid-template-columns: repeat(2,50%);
+      grid-gap: 20px 20px;
+  }
+  .shopNow>img{
+      width: 390px;
+      height: 230px;
+  }
+  #exw{
+      display: block;
+      width:594px;
+  }
+}
+@media only screen and (max-width:780px){
+    .shopNow{
+        grid-template-columns: repeat(1,100%);
+    }
+}
+@media only screen and (max-width:630px){
+    #ex,#best{
+        width:100%;
+    }
+    #footer>div{
+        width: 100%;
+    }
+    #footer>div>ul{
+        display: block;
+    }
+    #exw{
+        width:100%;
+    }
+    #goldmemb>div{
+        display: inline-block;
+        width:47%;
+    }
+}
+@media only screen and (max-width:430px){
+    .styleall>div>img{
+        width:80%;
+    }
+}
+@media only screen and (max-width:310px){
+    .styleall>div>img{
+        width:70%;
+    }
+}

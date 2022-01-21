@@ -1,0 +1,112 @@
+#shipping{
+    width:78%;
+    margin: auto;
+   font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#ship_add>div{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#ship_add{
+    width:65%;
+    display: inline-block;
+    vertical-align: top;
+}
+#order{
+    margin-left: 1%;
+   width:30%;
+   display: inline-block;
+}
+#O1{
+    width:100%;
+    background-color: white;
+    padding: 1%;
+}
+#add_div{
+   background-color: white;
+   padding: 1%;
+   margin-top: -1%;
+}
+#verify{
+   padding: 1%;
+   background-color: #C82506;
+   color:white;
+}
+#display>input{
+    margin-top: 1%;
+   margin-bottom: 1%;
+   padding: 1%;
+}
+#cancel{
+ padding: 1%;
+ margin-left: 28%;
+ color: #C82506;
+ border: 1px solid #C82506;
+}
+#deliver{
+   border: 1px solid #C82506;
+   background-color: #C82506;
+   color: white;
+   padding: 1%;
+}
+#arrow{
+    color: #C82506;
+}
+#name,#phoneno,#city,#pin,#address{
+   width:30%;
+  height:20px;
+}
+#list{
+ display: inline-block;
+ width:65%;
+ }
+#cost{
+ display: inline-block;
+ width:30%;
+ text-align: right;
+ vertical-align: top;
+}
+#copy,#payimg{
+ background-color: white;
+ margin-top: 4%;
+ padding: 1%;
+ border: 1px solid white;
+}
+#copy>ul{
+display: flex;
+}
+#copy>ul>li{
+ margin-left: 0;
+ text-align: center;
+}
+#payimg>img{
+ width: 100%;
+}
+#list>p:nth-child(5),#amount{
+ font-size: 20px;
+}
+@media only screen and (max-width:1250px)
+{
+    #shipping{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:950px)
+{
+    #shipping{
+        width:100%;
+    }
+   #ship_add{
+       display: block;
+       width:100%
+   }
+   #order{
+       display: block;
+       margin-top: 3%;
+       width:50%;
+   }
+}
+#deliver{
+    cursor: pointer;
+}

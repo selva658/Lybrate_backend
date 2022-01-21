@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+    <script src="https://kit.fontawesome.com/8f856e9bb7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/navigationbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+     <!-- icon -->
+     <link rel="icon" href="https://assets.lybrate.com/q_auto,f_auto,h_20,w_20/imgs/product/d2d/PatientGoldMembership/lybrate_icon_red_large.png">
+     <!--  -->
+</head>
+<body>
+    
+<!----------------------------------- navbar starting --------------------------- -->
+
+ <div id="snav">
+     <%-include("_loginnavbar") %>
+ </div>
+
+<!---------------------------------------------- navbar ending----------------------- -------------------- -->
+
+
+    <div id="login">
+        <div class="ng-scope">
+            <div class="ng-scope">
+            <div class="login-head">Welcome to Lybrate</div>
+            <div layout="row" layout-align="center center" class="login-panel">
+                <md-card class="login-wrapper">
+                    <ul tabs-wrapper="">
+                        <li class="active"><a href="http://localhost:5000/homepage/login">Login</a></li>
+                        <li class=""><a href="http://localhost:5000/homepage/signup">signup</a></li>
+                    </ul>
+                    <div >
+                    <div class="ng-scope"><form name="signupFormValidate" novalidate="" autocomplete="off" class="ng-pristine ng-scope ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength ng-valid-email">
+            <div>
+                <div class="fields-wrapper">
+                <div class="form-element">
+                        <input id="name1" type="text" name="name"required="" placeholder="Name*" autofocus="" class="ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched">
+                    </div>
+                   
+                    <div class="form-element">
+                        <input id="password1" type="password" name="password" required="" placeholder="Choose Password*" class="ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" aria-autocomplete="list">
+                    </div>
+                    <div class="ng-hide">
+                        <div class="ng-hide">
+                            <div class="md-caption lybRed" style="margin:16px 10px"><sup>*</sup>Please enter a valid name (special characters not allowed)</div>
+                        </div>
+                        <div>
+                            <div class="md-caption lybRed" style="margin:16px 10px"><sup>*</sup>Please fill all the required details correctly</div>
+                        </div>
+                    </div>
+                    <div class="terms-text">
+                           <a href="signup.html" class="lybRed" target="_blank">Forgot Password?</a>
+                    </div>
+                </div>
+                <section layout="column">
+                    <button id="login_btn" button="" class="md-primary lybText--white lybText--normal lybText--uppercase" type="submit" flex="">
+                        LOGIN
+                    </button>
+                </section>
+            </div>
+            </form></div>
+                    </div>
+                    
+                </md-card>
+            </div>
+            <div class="terms-text" align="center">
+            Don't have an account? <a href="signup.html">Get started!</a>
+            </div>
+        
+            </div>
+        
+            </div>
+            </div>
+        <%-include("_footer")%>
+    </div>
+</body>
+</html>
+
+<script >
+
+   
+
+// import navbar from "./componants/navbar.js"
+
+// document.querySelector("#snav").innerHTML=navbar()
+
+// import Login from "./componants/login.js";
+
+// document.getElementById("login").innerHTML = Login();
+
+
+document.getElementById("login_btn").addEventListener("click",LoginFunction);
+
+async function LoginFunction(e){
+    e.preventDefault();
+    let login_data = {
+        username: document.getElementById("name1").value,
+        password: document.getElementById("password1").value, 
+    };
+    
+    
+    login_data = JSON.stringify(login_data);
+    console.log(login_data);
+
+    let login_api = "https://masai-api-mocker.herokuapp.com/auth/login";
+
+    let res = await fetch(login_api,{
+        method: "POST",
+
+        body: login_data,
+
+        headers: {
+            "Content-Type": "application/json"
+        },
+    });
+
+
+    let data = await res.json();
+
+    console.log(data);
+
+    let mobile = document.getElementById("name1").value;
+
+    getProfile(mobile,data.token);
+    localStorage.setItem("username",JSON.stringify(mobile))
+}
+
+async function getProfile(mobile,token){
+    let user_api = `https://masai-api-mocker.herokuapp.com/user/${mobile}`;
+
+    let resp = await fetch(user_api,{
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`
+        },
+    });
+
+    let dataLogin = await resp.json();
+
+    console.log(dataLogin);
+    
+    window.location.href = "http://localhost:5000/homepage/home";
+
+}
+</script>
