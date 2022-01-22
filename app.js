@@ -1,4 +1,4 @@
-const app = require("./se")
+const app = require("./server")
 
 const connect = require("./configs/db")
 
